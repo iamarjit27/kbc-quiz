@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KBC Quiz - Basic</title>
+  <style>
+    body {
+      background-color: #000033;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .quiz-box {
+      background-color: #111155;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .option {
+      background-color: #222277;
+      border: 2px solid #333399;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .option:hover {
+      background-color: #4444aa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-box">
+    <h2>Q: Bharat ka Rashtrapati kaun hai?</h2>
+    <div class="option" onclick="checkAnswer('A')">A. Narendra Modi</div>
+    <div class="option" onclick="checkAnswer('B')">B. Amit Shah</div>
+    <div class="option" onclick="checkAnswer('C')">C. Droupadi Murmu</div>
+    <div class="option" onclick="checkAnswer('D')">D. Rahul Gandhi</div>
+  </div>
+
+  <script>
+    function checkAnswer(option) {
+      if (option === 'C') {
+        // ✅ Redirect to your Amazon store
+        window.location.href = "https://www.amazon.in/your-store-link";
+      } else {
+        alert("❌ Galat jawaab! Dubara koshish karein.");
+      }
+    }
+  </script>
+
+</body>
+</html>
